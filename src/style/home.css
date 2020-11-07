@@ -1,0 +1,32 @@
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.movie-list {
+    width:80%; 
+    max-width: 1500px;
+    display: flex; 
+    flex-direction: column;
+    background-color: #141414;
+    margin: 20px 0;
+} 
+
+.home-container {
+  margin-top: 15px;
+    color: white;
+}
+
+h1 {
+    color: white;
+    border-left: 5px solid #b1b100;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.slider-container {
+    width: 75%;
+    height: 100%;
+}

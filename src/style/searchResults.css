@@ -1,0 +1,41 @@
+
+.results-container {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+
+.min-height { 
+  height: 100vh;
+}
+
+.max-height {
+  height: 100%;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 70%;
+    margin-top: 5%;
+}
+
+.result-item {
+    margin: 1% 1%;
+    color: white;
+    border-radius: 5px;
+    background-color: #141414;
+    width: 17%;
+}
+
+.item-info {
+  
+    padding: 0 20px;
+}
+
+.result-item .poster img {
+    border-radius: 10px;
+    width: 99%;
+    height: 100%;
+}

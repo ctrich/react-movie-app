@@ -1,0 +1,84 @@
+.position-container {
+  color: white;
+  margin: 10% 10%;
+  position: absolute;
+  top: 5%;
+}
+
+.details-container {
+  margin-top: 3%;
+  /*background-color: rgb(3, 58, 54);*/
+  background-color: rgb(10, 10, 10)
+}
+
+.poster-container {
+  float: left;
+  margin-right: 5%;
+}
+/* 
+.details-poster {
+  width: 90%;
+} */
+
+.details-title {
+  font-size: 34px;
+  margin-top: 5%;
+}
+
+.synopsis-container {
+  display: flex;
+  margin-top: 0%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.details-overview {
+  margin-top: 1%;
+  padding-right: 5%;
+}
+
+.details-background img{
+  opacity: .2;
+  max-width: 100%;
+}
+
+.details-star {
+  width: 25px;
+}
+
+.details-rating {
+  margin: 5% 0;
+}
+
+.cast-container {
+  width: 75%;
+
+}
+
+.facts-container {
+  color: white;
+  display: flex;
+  padding: 5%;
+}
+
+.facts-container p strong {
+  display: block;
+}
+
+.movie-facts {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.crew-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.crew-member {
+  margin-right: 20px;
+  width: 200px;
+  }
