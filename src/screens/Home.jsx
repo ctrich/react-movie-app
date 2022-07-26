@@ -9,7 +9,7 @@ import * as CONST from '../util/const';
 const Home = ({ history }) => {
   const [popular, setPopular] = useState([]);
   const [upcoming, setUpcoming] = useState([]);
-  const [nowPlaying, setNowPlaying] = useState([]);
+  const [popularTv, setPopularTv] = useState([]);
   const [trending, setTrending] = useState([]);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Home = ({ history }) => {
         api_key: CONST.API_KEY,
       },
     });
-    const getNowPlaying = axios.get(CONST.BASE + CONST.NOW_PLAYING, {
+    const getPopularTv = axios.get(CONST.BASE + CONST.POPULAR_TV, {
       params: {
         api_key: CONST.API_KEY,
       },
@@ -34,11 +34,11 @@ const Home = ({ history }) => {
       },
     });
 
-    axios.all([getPopular, getUpcoming, getNowPlaying, getTrending])
+    axios.all([getPopular, getUpcoming, getPopularTv, getTrending])
       .then(axios.spread((...results) => {
         setPopular(results[0].data.results);
         setUpcoming(results[1].data.results);
-        setNowPlaying(results[2].data.results);
+        setPopularTv(results[2].data.results);
         setTrending(results[3].data.results);
       })).catch((err) => {
         console.log(err);
@@ -71,9 +71,9 @@ const Home = ({ history }) => {
       <div className="list-container">
         <div className="movie-list">
           <div>
-            <h1>Now Playing</h1>
+            <h1>Popular Tv</h1>
           </div>
-          <Scroller history={history} list={nowPlaying} />
+          <Scroller history={history} list={popularTv} />
         </div>
       </div>
     </div>
