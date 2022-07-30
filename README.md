@@ -1,4 +1,4 @@
-# Stream Base
+# Stream Base (Current Project)
 Stream Base is a site where you can keep track of all the movies and shows you want to watch. You can save movies/shows to a watchlist and see where it's available to watch. Search for movies/shows to see details and trailers.
 
 **Website:** https://streambase.netlify.app/
